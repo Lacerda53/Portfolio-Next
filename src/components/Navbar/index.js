@@ -4,7 +4,7 @@ import NavLink from "../NavLink";
 export function Navbar() {
   return (
     <header className={styles.containerNavbar}>
-      <NavLink href="/">
+      <NavLink href="/#">
         <a>HOME</a>
       </NavLink>
       <NavLink href="/#work">

@@ -1,7 +1,44 @@
 import React from "react";
 import styles from "./about.module.scss";
+import Image from 'next/image'
 
 export function About() {
+
+  const languages = [
+    {
+      title: 'Javascript',
+      icon: '/img/javascript.svg'
+    },
+    {
+      title: 'C#',
+      icon: '/img/csharp.svg'
+    },
+    {
+      title: 'Typescript',
+      icon: '/img/typescript.svg'
+    },
+    {
+      title: '.NET Core',
+      icon: '/img/netcore.svg'
+    },
+    {
+      title: 'ReactJs & React Native',
+      icon: '/img/react.svg'
+    },
+    {
+      title: 'SQL Server',
+      icon: '/img/sqlserver.svg'
+    },
+    {
+      title: 'Firebase',
+      icon: '/img/firebase.svg'
+    },
+    {
+      title: 'Git',
+      icon: '/img/git.svg'
+    }
+  ]
+
   return (
     <div id="about" className={styles.containerAbout}>
       <div className="title">
@@ -26,6 +63,16 @@ export function About() {
         </div>
         <div>
           <h3>Habilidades</h3>
+          <div>
+            <ul>
+              {languages.map((item, index)=>(
+                <li key={index}>
+                  <Image src={item.icon} width={60} height={60} alt={item.title} />
+                  <h4>{item.title}</h4>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

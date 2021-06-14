@@ -25,6 +25,23 @@
       font-size: 0.96rem;
       font-weight: 100;
     }
+    >div{
+      >ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: calc(100vh - 20rem);
+        list-style: none;
+        >li{
+          display: flex;
+          align-items: center;
+
+          >h4 {
+            font-family: "Inter", sans-serif;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
     &:first-child {
       z-index: 99;
       &:after {

@@ -1,11 +1,18 @@
 import styles from "./welcome.module.scss";
+import Image from "next/image";
 
 export function Welcome() {
+
   return (
-    <div className={styles.containerWelcome}>
+    <div id="#" className={styles.containerWelcome}>
       <div>
         <div className={styles.containerAvatar}>
-          <img src="/img/guilherme.png" alt="" />
+          <Image
+            src="/img/guilherme.png"
+            alt="guilherme"
+            width={294}
+            height={457}
+          />
         </div>
         <div className={styles.right}>
           <h1>Guilherme Lacerda</h1>
