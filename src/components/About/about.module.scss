@@ -4,14 +4,26 @@
 }
 
 .rowContainer {
-  padding: 3rem 10rem;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: 2fr 3fr;
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 3rem 3rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 
   h3 {
     font-family: "Inter", sans-serif;
     font-weight: bold;
+    @media (max-width: 1000px) {
+      font-size: 2rem;
+    }
   }
   > div {
     background: #222129;
@@ -24,16 +36,19 @@
       margin-top: 1rem;
       font-size: 0.96rem;
       font-weight: 100;
+      @media (max-width: 1000px) {
+        font-size: 1.5rem;
+      }
     }
     > div {
       > ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        height: calc(100vh - 20rem);
         list-style: none;
         > li {
           display: flex;
           align-items: center;
+          padding: 1rem;
 
           > h4 {
             font-family: "Inter", sans-serif;

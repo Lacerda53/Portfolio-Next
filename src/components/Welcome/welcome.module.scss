@@ -1,6 +1,4 @@
 .containerWelcome {
-  display: flex;
-
   > div {
     display: grid;
     align-items: center;
@@ -11,7 +9,8 @@
     z-index: 1;
 
     @media (max-width: 818px) {
-      padding: 5rem;
+      padding: 0 3rem;
+      padding-top: 7rem;
       grid-template-columns: 1fr;
       gap: 0;
       justify-content: center;
@@ -38,6 +37,11 @@
       opacity: 0.8;
       font-weight: 100;
       font-size: 1.2rem;
+      @media (max-width: 818px) {
+        width: 100%;
+        font-size: 1.7rem;
+        text-align: center;
+      }
     }
   }
 

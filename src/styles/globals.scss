@@ -29,11 +29,12 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100vw;
 }
 
 body {
   background: var(--background);
+  width: 100%;
+  display: flex;
 }
 
 body,

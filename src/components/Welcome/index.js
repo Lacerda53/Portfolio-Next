@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Welcome() {
   return (
-    <div id="#" className={styles.containerWelcome}>
+    <section id="#" className={styles.containerWelcome}>
       <div>
         <div className={styles.containerAvatar}>
           <Image
@@ -23,6 +23,6 @@ export function Welcome() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
