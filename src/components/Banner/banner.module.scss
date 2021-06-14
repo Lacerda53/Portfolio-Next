@@ -1,24 +1,30 @@
 .containerBanner {
-  display: grid;
-  justify-content: center;
-  align-items: flex-end;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 5rem 10rem;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > img {
-      width: 8rem;
+    display: grid;
+    width: 100%;
+    align-items: flex-end;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 10rem;
+    @media (max-width: 818px) {
+      grid-template-columns: 1fr;
     }
-    > h1 {
-      font-size: 3rem;
-      color: #8000ff;
-    }
-    > p {
-      font-weight: 300;
-      color: #cecece;
+
+    > div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > h1 {
+        font-size: 3rem;
+        color: #8000ff;
+      }
+      > p {
+        font-weight: 300;
+        color: #cecece;
+      }
     }
   }
 }

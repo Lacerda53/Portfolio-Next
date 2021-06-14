@@ -2,7 +2,6 @@ import styles from "./welcome.module.scss";
 import Image from "next/image";
 
 export function Welcome() {
-
   return (
     <div id="#" className={styles.containerWelcome}>
       <div>
