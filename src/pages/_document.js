@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Desenvolvimento Web e Mobile moderno"
           />
+          <meta property="og:image" content="/img/guilherme.png"/>
           <meta property="og:title" content="Lacerda53" />
           <meta
             property="og:description"
