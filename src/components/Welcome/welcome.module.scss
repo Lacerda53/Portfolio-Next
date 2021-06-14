@@ -1,50 +1,38 @@
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  background-position: top;
-  background-size: cover;
+.containerWelcome {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 5rem);
 
-  .containerWelcome {
-    margin-top: 4.1rem;
-    display: flex;
+  > div {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 5rem;
+    margin-top: 4rem;
+    z-index: 1;
+  }
+
+  .right {
+    width: 40%;
+    margin-top: 4rem;
+    > h1 {
+      color: var(--primary);
+      font-size: 4rem;
+      width: 50%;
+      line-height: 67px;
+      letter-spacing: 0.1em;
+    }
+    > p {
+      margin-top: 2.5rem;
+      width: 476px;
+      opacity: 0.8;
+      font-weight: 100;
+      font-size: 1.2rem;
+    }
+  }
+
+  .containerAvatar {
     width: 100%;
-    height: calc(100vh - 5rem);
-    position: relative;
-
-    > div {
-      max-width: 1024px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 0 auto;
-      gap: 5rem;
-      margin-top: 4rem;
-      z-index: 1;
-    }
-
-    .right {
-      width: 40%;
-      margin-top: 4rem;
-      > h1 {
-        color: var(--primary);
-        font-size: 4rem;
-        width: 50%;
-        line-height: 67px;
-        letter-spacing: 0.1em;
-      }
-      > p {
-        margin-top: 2.5rem;
-        width: 476px;
-        font-weight: 300;
-        font-size: 1.2rem;
-      }
-    }
-
-    .containerAvatar {
-      position: relative;
-      width: 100%;
-    }
   }
 }

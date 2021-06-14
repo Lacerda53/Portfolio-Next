@@ -8,8 +8,7 @@ const NavLink = ({ href, children }) => {
   let className = children.props.className || "";
   if (router.pathname === href) {
     className = `${className} active`;
-  }
-  else{
+  } else {
     className = `${className} inactive`;
   }
 
