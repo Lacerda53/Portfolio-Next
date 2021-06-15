@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./banner.module.scss";
 import Image from "next/image";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 export function Banner() {
 
-  useEffect(()=>{
-    Aos.init()
-  },[])
 
   return (
     <div className={styles.containerBanner}>

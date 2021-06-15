@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./about.module.scss";
 import Image from "next/image";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 export function About() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
 
   const languages = [
     {
