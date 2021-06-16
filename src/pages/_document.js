@@ -8,15 +8,15 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <meta
             name="description"
-            content="Desenvolvimento Web e Mobile moderno"
+            content="Portfolio com projetos de estudo e produção desenvolvidos nas mais modernas tecnologias."
           />
           <meta property="og:image" content="/img/shared.png" />
-          <meta property="og:title" content="Lacerda53" />
+          <meta property="og:title" content="Guilherme Lacerda" />
           <meta
             property="og:description"
-            content="Portfolio desenvolvedor Web e Mobile moderno"
+            content="Portfolio com projetos de estudo e produção desenvolvidos nas mais modernas tecnologias."
           />
-          <meta property="og:url" content="https://www.lacerda53.me/" />
+          <meta property="og:url" content="https://www.lacerda53.me" />
           <meta property="og:type" content="website"></meta>
           <link rel="shortcut icon" href="/img/favicon.ico" />
           <link
