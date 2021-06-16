@@ -62,19 +62,6 @@
       &:after {
         content: "";
         z-index: 9;
-        position: absolute;
-        width: 20rem;
-        height: 20rem;
-        border-radius: 50%;
-        margin-top: -10rem;
-        left: 0px;
-
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.1) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
-        opacity: 0.8;
       }
     }
     &:last-child {
@@ -97,4 +84,21 @@
       }
     }
   }
+}
+
+.circleLarge {
+  z-index: 9;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  top: 1380px;
+  left: 0px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0.8;
 }

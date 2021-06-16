@@ -3,6 +3,7 @@ import { About } from "../components/About";
 import { Banner } from "../components/Banner";
 import { Navbar } from "../components/Navbar";
 import { Welcome } from "../components/Welcome";
+import { ToTop } from "../components/ToTop";
 import { Work } from "../components/Work";
 import { Footer } from "../components/Footer";
 import Aos from "aos";
@@ -14,6 +15,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <ToTop/>
       <Navbar />
       <Welcome />
       <Banner />

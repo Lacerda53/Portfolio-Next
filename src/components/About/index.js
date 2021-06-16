@@ -3,7 +3,6 @@ import styles from "./about.module.scss";
 import Image from "next/image";
 
 export function About() {
-
   const languages = [
     {
       title: "Javascript",
@@ -41,12 +40,13 @@ export function About() {
 
   return (
     <div id="about" className={styles.containerAbout}>
-      <div className="title">
+      <div data-aos="fade-up" className="title">
         <h1>SOBRE MIM</h1>
       </div>
-      <div className={styles.circle}></div>
+      <div data-aos="zoom-in" className={styles.circleLarge}></div>
+      <div className={styles.circleSmall}></div>
       <div className={styles.rowContainer}>
-        <div>
+        <div data-aos="fade-right" >
           <h3>Descrição</h3>
           <p>
             Sou uma pessoa curiosa, sempre que posso quero aprender coisas
@@ -61,7 +61,7 @@ export function About() {
             artigos no Medium e participo de Hackathons.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-left" >
           <h3>Habilidades</h3>
           <div>
             <ul>

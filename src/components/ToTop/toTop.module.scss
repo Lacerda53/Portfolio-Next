@@ -1,0 +1,18 @@
+.buttonToTop {
+    width: 100%;
+    > div {
+        right: 5%;
+        bottom: 8%;
+        z-index: 9999;
+        position: fixed;
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0d0d0d;
+      color: var(--primary);
+      padding: 1rem;
+      border-radius: 0.3rem;
+    }
+  }
+}

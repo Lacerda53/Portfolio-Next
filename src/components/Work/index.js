@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./work.module.scss";
 
 export function Work() {
