@@ -49,11 +49,10 @@ export function About() {
         <div data-aos="fade-right" >
           <h3>Descrição</h3>
           <p>
-            Sou uma pessoa curiosa, sempre que posso quero aprender coisas
-            novas. Gosto de usar C# em projetos de backend e Javascript
-            (ReactJS) em projetos de frontend, estou sempre buscando aprimorar
+            Sou um profissional tranquilo, sempre que posso quero aprender coisas
+            novas. Uso ReactJS em projetos de Frontend e React Native em projetos Mobile, estou sempre buscando aprimorar
             meus conhecimentos e habilidades, sou dedicado, responsável,
-            paciente e tenho uma boa comunicação em equipe.
+            paciente e com boa comunicação em equipe.
           </p>
           <p>
             Amo aprender e ensinar, procuro sempre compartilhar meus
