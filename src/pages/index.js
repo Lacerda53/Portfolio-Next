@@ -5,9 +5,11 @@ import { Navbar } from "../components/Navbar";
 import { Welcome } from "../components/Welcome";
 import { ToTop } from "../components/ToTop";
 import { Work } from "../components/Work";
+import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { SocialMedia } from "../components/SocialMedia";
 
 export default function Home() {
   useEffect(() => {
@@ -15,12 +17,14 @@ export default function Home() {
   }, []);
   return (
     <>
-      <ToTop/>
+      <ToTop />
       <Navbar />
       <Welcome />
       <Banner />
       {/* <Work /> */}
       <About />
+      <Contact />
+      <SocialMedia />
       <Footer />
     </>
   );

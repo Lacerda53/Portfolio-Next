@@ -1,0 +1,71 @@
+.containerContact {
+  width: 70%;
+  margin: 0 auto;
+  > div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2.5fr 4fr;
+    margin-top: 5rem;
+    z-index: 1;
+
+    @media (max-width: 1000px) {
+      padding: 0 3rem;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > form {
+        width: 100%;
+        > div {
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: column;
+
+          > label {
+            color: var(--primary);
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+          }
+
+          > input,
+          textarea {
+            background: transparent;
+            border: 0;
+            margin-top: 1rem;
+            padding-bottom: .8rem;
+            border-bottom: 1px solid #757575;
+            transition: .5s;
+
+            &:focus{
+                outline: 0;
+                border-color: #fff;
+            }
+          }
+        }
+        > button {
+          margin-top: 2rem;
+          padding: 1rem 3rem;
+          background: transparent;
+          border: 1px solid var(--primary);
+          border-radius: .5rem;
+          font-family: "Hanson", sans-serif;
+          letter-spacing: 0.1em;
+          transition: .3s;
+
+          &:hover{
+              color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

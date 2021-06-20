@@ -9,6 +9,7 @@
   --text: #fff;
   --background: #090909;
   --box: #222129;
+  --white: #FFF;
 }
 
 @font-face {
@@ -86,6 +87,7 @@ h2 {
   position: relative;
   text-align: center;
   height: 3.5rem;
+  letter-spacing: 0.1rem;
 
   &:after {
     content: "";
