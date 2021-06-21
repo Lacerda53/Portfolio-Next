@@ -2,9 +2,25 @@ import styles from "./contact.module.scss";
 import Image from "next/image";
 
 export function Contact() {
-  const key = "9fd0df20-8c9f-431d-8214-7e3acca0e7cd";
-
-  async function handleSubmit() {
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        apikey: "9fd0df20-8c9f-431d-8214-7e3acca0e7cd",
+        name: e.target.name.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
+    }
   }
 
   return (
@@ -16,7 +32,6 @@ export function Contact() {
           </div>
 
           <form onSubmit={handleSubmit}>
-            <input type="hidden" name="apikey" value={key} />
             <div data-aos="fade-left">
               <label htmlFor="">NOME</label>
               <input
