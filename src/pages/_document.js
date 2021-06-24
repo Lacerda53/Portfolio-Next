@@ -6,6 +6,20 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-P6ZNFNDWGM"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-P6ZNFNDWGM', { page_path: window.location.pathname });
+            `,
+            }}
+          />
           <meta
             name="description"
             content="Portfolio com projetos de estudo e produção desenvolvidos nas mais modernas tecnologias."
