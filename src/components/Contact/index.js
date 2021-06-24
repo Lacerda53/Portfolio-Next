@@ -1,9 +1,12 @@
 import styles from "./contact.module.scss";
 import Image from "next/image";
+import { useState } from "react";
 
 export function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   async function handleSubmit(e) {
     e.preventDefault();
+    setIsLoading(true);
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -19,8 +22,9 @@ export function Contact() {
     });
     const result = await response.json();
     if (result.success) {
-      console.log(result);
+      e.target.reset();
     }
+    setIsLoading(false);
   }
 
   return (
@@ -60,7 +64,9 @@ export function Contact() {
                 placeholder="Escreva sua mensagem aqui"
               ></textarea>
             </div>
-            <button type="submit">ENVIAR</button>
+            <button disabled={isLoading} type="submit">
+              ENVIAR
+            </button>
           </form>
         </div>
         <div data-aos="zoom-in">
