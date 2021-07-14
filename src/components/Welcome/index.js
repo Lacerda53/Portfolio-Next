@@ -16,11 +16,10 @@ export function Welcome() {
         <div className={styles.right}>
           <h1 data-aos="fade-down">Guilherme Lacerda</h1>
           <p data-aos="fade-left">
-            Sou <strong>desenvolvedor Frontend</strong>, acadêmico de Sistemas
-            de Informação, cursando o 7º período. Atualmente trabalho como
-            Auxiliar Administrativo de TI no UNITPAC - Centro Universitário
-            Tocantinense Presidente Antônio Carlos.
+            {"->"} Desenvolvedor <strong>Mobile na Sofit - Gestão de Frotas</strong>
           </p>
+          <p data-aos="fade-left">{"->"} Acadêmico de <strong>Sistemas de Informação</strong></p>
+          <p data-aos="fade-left">{"->"} Participante de <strong>Hackathons</strong></p>
         </div>
       </div>
     </section>

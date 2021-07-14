@@ -49,10 +49,9 @@ export function About() {
         <div data-aos="fade-right" >
           <h3>Descrição</h3>
           <p>
-            Sou um profissional tranquilo, sempre que posso quero aprender coisas
+            Sou um profissional responsável, sempre que posso quero aprender coisas
             novas. Uso ReactJS em projetos de Frontend e React Native em projetos Mobile, estou sempre buscando aprimorar
-            meus conhecimentos e habilidades, sou dedicado, responsável,
-            paciente e com boa comunicação em equipe.
+            meus conhecimentos e habilidades, sou dedicado e paciente.
           </p>
           <p>
             Amo aprender e ensinar, procuro sempre compartilhar meus

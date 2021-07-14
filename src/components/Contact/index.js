@@ -24,7 +24,7 @@ export function Contact() {
   }
 
   return (
-    <div className={styles.containerContact}>
+    <div id="contact" className={styles.containerContact}>
       <div>
         <div>
           <div className="title">
