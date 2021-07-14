@@ -9,7 +9,7 @@
   --text: #fff;
   --background: #070707;
   --box: #222129;
-  --white: #FFF;
+  --white: #fff;
 }
 
 @font-face {
@@ -105,4 +105,10 @@ h2 {
 
 button {
   cursor: pointer;
+}
+
+[disabled],
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
