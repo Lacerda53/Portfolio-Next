@@ -70,7 +70,7 @@ export function Contact() {
           </form>
         </div>
         <div data-aos="zoom-in">
-          <Image src="/img/contact.png" width={457} height={413} />
+          <Image src="/img/contact.png" width={400} height={400} />
         </div>
       </div>
     </div>

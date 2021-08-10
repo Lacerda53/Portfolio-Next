@@ -49,14 +49,14 @@ export function About() {
         <div data-aos="fade-right" >
           <h3>Descrição</h3>
           <p>
-            Sou um profissional responsável, sempre que posso quero aprender coisas
-            novas. Uso ReactJS em projetos de Frontend e React Native em projetos Mobile, estou sempre buscando aprimorar
-            meus conhecimentos e habilidades, sou dedicado e paciente.
+            Olá, meu nome é Guiherme Andrade Lacerda, sou desenvolvedor mobile na Sofit - Gestão de Frotas, sou um profissional dedicado,
+            que ama o que faz, atualmente cursando o último período do curso de Sistemas de Informação na UNITPAC, estou sempre em busca
+            de novos desafios para aprimorar cada vez mais meus conhecimentos, em momentos livres gosto de tocar projetos pessoais, aprender
+            features novas e tocar violão.
           </p>
           <p>
-            Amo aprender e ensinar, procuro sempre compartilhar meus
-            conhecimentos com outras pessoas, nas horas vagas escrevo alguns
-            artigos no Medium e participo de Hackathons.
+            Acredito muito na técnica de aprender ensinando, então curto muito ensinar
+            e também to sempre disposto a aprender.
           </p>
         </div>
         <div data-aos="fade-left" >
