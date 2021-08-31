@@ -46,7 +46,7 @@ export function About() {
       <div data-aos="zoom-in" className={styles.circleLarge}></div>
       <div className={styles.circleSmall}></div>
       <div className={styles.rowContainer}>
-        <div data-aos="fade-right" >
+        <div>
           <h3>Descrição</h3>
           <p>
             Olá, meu nome é Guiherme Andrade Lacerda, sou desenvolvedor mobile na Sofit - Gestão de Frotas, sou um profissional dedicado,
@@ -59,7 +59,7 @@ export function About() {
             e também to sempre disposto a aprender.
           </p>
         </div>
-        <div data-aos="fade-left" >
+        <div >
           <h3>Habilidades</h3>
           <div>
             <ul>

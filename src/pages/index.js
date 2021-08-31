@@ -13,11 +13,10 @@ import { SocialMedia } from "../components/SocialMedia";
 
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, offset: 1 });
   }, []);
   return (
     <>
-      <ToTop />
       <Navbar />
       <Welcome />
       <Banner />
@@ -26,6 +25,7 @@ export default function Home() {
       <Contact />
       <SocialMedia />
       <Footer />
+      <ToTop />
     </>
   );
 }
